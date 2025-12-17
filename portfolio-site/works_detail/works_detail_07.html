@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>koto's  portfolio</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+<header>
+    <a id="page_top" href="#"><img src="../img/top_btn01.png" alt="page_top" onmouseover="this.src='../img/top_btn02.png'" onmouseout="this.src='../img/top_btn01.png'"></a>
+
+	<div class="nav_inner clearfix">
+    	<h1><a href="../index.html">koto's  portfolio</a></h1>
+        
+        <nav>
+        	<ul>
+            	<li class="line"><a href="../index.html">home</a></li>
+                <li class="line"><a href="../works.html">works</a></li>
+                <li class="line"><a href="../profile.html">profile</a></li>
+                <li class="line"><a href="../gallery.html">gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger_menu">
+            <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+            <div id="nav-menu" class="nav" aria-hidden="true">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="../works.html" class="nav__link">works</a></li>
+                    <li class="nav__item"><a href="../profile.html" class="nav__link">profile</a></li>
+                    <li class="nav__item"><a href="../gallery.html" class="nav__link">gallery</a></li>
+                </ul>
+            </div><!-- .nav-menu -->
+        </div><!-- .hamburger_menu -->
+    </div>
+</header>
+
+
+<div id="works_wrapper">
+    <div class="works_header">
+        <div class="title">
+            <div class="flower">
+                <img src="../img/flower_01.png" alt="flower">
+                <img src="../img/flower_02.png" alt="flower">
+            </div>
+        
+            <div class="text">
+                <p>運送会社のTOPページ</p>
+                <h2>未来運送</h2>
+            </div>
+            
+            <div class="flower">
+                <img src="../img/flower_03.png" alt="flower">
+                <img src="../img/flower_04.png" alt="flower">
+            </div>
+        </div><!-- .title -->
+
+        <div class="work_slider">
+            <div class="slider_container">
+                <div class="slider_images">
+                    <img src="../img/works/detail/detail_web_01.jpg" alt="img" class="slider_image active">
+                </div>
+            </div><!-- slider_container -->
+        </div><!-- work_slider -->
+    </div><!-- works_header -->
+
+    <div class="scroll">
+        <div class="cp_arrows">
+            <div class="cp_arrow"></div>
+            <div class="cp_arrow"></div>
+        </div>
+
+        <p>scroll</p>
+
+        <div class="cp_arrows">
+            <div class="cp_arrow"></div>
+            <div class="cp_arrow"></div>
+        </div>
+    </div><!-- .scroll -->
+
+    <div class="comp">
+        <img src="../img/works/detail/miraiunsou.jpg" alt="comp_img">
+    </div>
+
+    <div class="table">
+        <table>
+			<tr>
+				<th><div>ターゲット</div></th>
+                <td>運送を委託したい人、運送会社に就職を考えている人</td>
+			</tr>
+
+			<tr>
+				<th><div>コンセプト</div></th>
+                <td>
+                    コンセプトは誠実さを売りにした運送会社
+                </td>
+			</tr>
+
+			<tr>
+				<th><div>デザイン</div></th>
+                <td>
+                    誠実さを売りにしているため、清潔感や信頼感の印象を与える青を中心にアクセントカラーに赤色を入れることで力強さを表現し、
+                    頼りたくなるようなデザインにしました<br>
+                    背景には、全国を転々として企業をつなげる運送会社をイメージして、点と点がつながる背景を配置しました
+                </td>
+			</tr>
+
+            <tr>
+				<th><div>使用ツール</div></th>
+                <td class="last">Photoshop</td>
+			</tr>
+		</table>
+    </div><!-- table -->
+
+    <div class="back_to_list">
+        <a href="../works.html#website" class="view_btn">一覧へ戻る</a>
+    </div>
+</div><!-- #works_wrapper -->
+
+<footer>
+    <small>&copy; 2025 kotoku chihiro</small>
+</footer>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/works-slider.js"></script>
+<script src="../js/hamburger.js"></script>
+<script src="../js/function.js"></script>
+</body>
+
+</html>

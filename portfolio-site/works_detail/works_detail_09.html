@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>koto's  portfolio</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+<header>
+    <a id="page_top" href="#"><img src="../img/top_btn01.png" alt="page_top" onmouseover="this.src='../img/top_btn02.png'" onmouseout="this.src='../img/top_btn01.png'"></a>
+
+	<div class="nav_inner clearfix">
+    	<h1><a href="../index.html">koto's  portfolio</a></h1>
+        
+        <nav>
+        	<ul>
+            	<li class="line"><a href="../index.html">home</a></li>
+                <li class="line"><a href="../works.html">works</a></li>
+                <li class="line"><a href="../profile.html">profile</a></li>
+                <li class="line"><a href="../gallery.html">gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger_menu">
+            <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+            <div id="nav-menu" class="nav" aria-hidden="true">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">home</a></li>
+                    <li class="nav__item"><a href="../works.html" class="nav__link">works</a></li>
+                    <li class="nav__item"><a href="../profile.html" class="nav__link">profile</a></li>
+                    <li class="nav__item"><a href="../gallery.html" class="nav__link">gallery</a></li>
+                </ul>
+            </div><!-- .nav-menu -->
+        </div><!-- .hamburger_menu -->
+    </div>
+</header>
+
+
+<div id="works_wrapper">
+    <div class="works_header">
+        <div class="title">
+            <div class="flower">
+                <img src="../img/flower_01.png" alt="flower">
+                <img src="../img/flower_02.png" alt="flower">
+            </div>
+        
+            <div class="text">
+                <p>ポートフォリオサイト</p>
+                <h2>koto's  portfolio</h2>
+            </div>
+            
+            <div class="flower">
+                <img src="../img/flower_03.png" alt="flower">
+                <img src="../img/flower_04.png" alt="flower">
+            </div>
+        </div><!-- .title -->
+
+        <div class="work_slider">
+            <div class="slider_container">
+               
+                <div class="slider_images">
+                    <img src="../img/works/detail/detail_web_03.jpg" alt="img" class="slider_image active">
+                </div>
+
+            </div><!-- slider_container -->
+        </div><!-- work_slider -->
+    </div><!-- works_header -->
+
+    <div class="scroll">
+        <div class="cp_arrows">
+            <div class="cp_arrow"></div>
+            <div class="cp_arrow"></div>
+        </div>
+
+        <p>scroll</p>
+
+        <div class="cp_arrows">
+            <div class="cp_arrow"></div>
+            <div class="cp_arrow"></div>
+        </div>
+    </div><!-- .scroll -->
+
+    <div class="work_slider work_slider_vertical">
+        <div class="slider_container slider_container_vertical">
+            <button class="slider_btn prev_btn_2" aria-label="前の画像">
+                <span>&lt;</span>
+            </button>
+
+            <div class="slider_images_vertical">
+                <div class="slider_image_wrapper active">
+                    <img src="../img/works/detail/portfolio_01.jpg" alt="dc" class="slider_image_vertical">
+                </div>
+
+                <div class="slider_image_wrapper">
+                    <img src="../img/works/detail/portfolio_02.jpg" alt="dc" class="slider_image_vertical">
+                </div>
+
+                <div class="slider_image_wrapper">
+                    <img src="../img/works/detail/portfolio_03.jpg" alt="dc" class="slider_image_vertical">
+                </div>
+
+                <div class="slider_image_wrapper">
+                    <img src="../img/works/detail/portfolio_04.jpg" alt="dc" class="slider_image_vertical">
+                </div>
+            </div>
+
+            <button class="slider_btn next_btn_2" aria-label="次の画像">
+                <span>&gt;</span>
+            </button>
+        </div><!-- slider_container_vertical -->
+    </div><!-- .work_slider_vertical -->
+
+    <div class="table">
+        <table>
+			<tr>
+				<th><div>ターゲット</div></th>
+                <td>デザイン会社に勤めている方、採用担当の方</td>
+			</tr>
+
+			<tr>
+				<th><div>コンセプト</div></th>
+                <td>
+                    デザイン制作の仕事に就職するためのポートフォリオサイト<br>
+                    見やすさを重視したシンプルさかつカラフルを意識したサイト
+                </td>
+			</tr>
+
+			<tr>
+				<th><div>デザイン</div></th>
+                <td>
+                    ポップモダンや韓国ポップをイメージ<br>
+	                装飾に花や人物などの手描きイラストを入れて柔らかい印象を作り、
+	                白、オレンジをメインにし、サブカラーの緑色は寒色ですが淡い色にすることで温かみのあるデザインにしました
+
+                </td>
+			</tr>
+
+            <tr>
+				<th><div>使用ツール</div></th>
+                <td class="last">Photoshop　　illustrator　　CLIP STUDIO PAINT</td>
+			</tr>
+		</table>
+    </div><!-- table -->
+
+    <div class="back_to_list">
+        <a href="../works.html#website" class="view_btn">一覧へ戻る</a>
+    </div>
+</div><!-- #works_wrapper -->
+
+<footer>
+    <small>&copy; 2025 kotoku chihiro</small>
+</footer>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/works-slider.js"></script>
+<script src="../js/hamburger.js"></script>
+<script src="../js/function.js"></script>
+</body>
+
+</html>
