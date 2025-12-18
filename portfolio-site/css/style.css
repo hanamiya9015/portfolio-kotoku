@@ -2463,3 +2463,86 @@ button.view_btn.on-click::after {
     margin-top: 3px;
   }
 }
+
+/************************************************** responsive_1050_up (1050px以上) **************************************************/
+
+@media screen and (min-width: 1051px) {
+  /* 1050pxを超えたらタイトルを12remに */
+  .key-title-line1 {
+    font-size: 12rem;
+    letter-spacing: 0.08em;
+  }
+  .key-title-line2 {
+    font-size: 12rem;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
+  }
+
+  /* スクロールボタン */
+  .scroll-down_02 {
+    width: 180px;
+    height: 180px;
+    margin: 30px auto 0;
+  }
+  .circle-text_02 span {
+    font-size: 13px;
+    transform-origin: 0 90px;
+  }
+  .arrow_02 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/************************************************** responsive_1500_up (1500px以上) **************************************************/
+
+@media screen and (min-width: 1501px) {
+  /* 1500pxを超えたらタイトルを14remに */
+  .key-title-line1 {
+    font-size: 14rem;
+    letter-spacing: 0.1em;
+  }
+  .key-title-line2 {
+    font-size: 14rem;
+    letter-spacing: 0.06em;
+    margin-top: 15px;
+  }
+
+  /* スクロールボタンも大きく */
+  .scroll-down_02 {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 0;
+  }
+  .circle-text_02 span {
+    font-size: 14px;
+    transform-origin: 0 100px;
+  }
+  .arrow_02 {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/************************************************** responsive_1700_up (超大画面用) **************************************************/
+
+@media screen and (min-width: 1701px) {
+  /* キービジュアル全体をセンタリングし、最大幅を固定 */
+  .key {
+    justify-content: center;
+    padding-left: calc((100vw - 1700px) / 2);
+    padding-right: calc((100vw - 1700px) / 2);
+    box-sizing: border-box;
+  }
+
+  .key .pc {
+    max-width: 1700px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* タイトルの位置を1700px幅基準で固定（中央揃えコンテンツに対して相対的） */
+  .key-title {
+    left: calc((100vw - 1700px) / 2 + 1700px * 0.12);
+  }
+}
