@@ -1,3 +1,23 @@
+/******* ローディング画面制御 *********/
+
+$(function () {
+  // ページ読み込み完了後、2秒待ってからローディング画面をフェードアウト
+  var loadingScreen = $('#loading-screen');
+  
+  // 最低2秒間ローディング画面を表示
+  setTimeout(function() {
+    // bodyにloadedクラスを追加してアニメーション開始
+    $('body').addClass('loaded');
+    
+    loadingScreen.addClass('fade-out');
+    
+    // フェードアウト完了後にDOM から削除（0.6秒後）
+    setTimeout(function() {
+      loadingScreen.remove();
+    }, 600);
+  }, 2000);
+});
+
 /******* スムーススクロール *********/
 
 $(function () {
