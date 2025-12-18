@@ -121,15 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
  // === イラストトラックの初期化 ===
  const illustrationTrack = document.querySelector('.illustration_track');
  if (illustrationTrack) {
-   // 左から右へ、速度2（px/秒）
-   initInfiniteSlider(illustrationTrack, 60, 'right');
+   // 左から右へ、速度30（px/秒）- ゆっくりめ
+   initInfiniteSlider(illustrationTrack, 30, 'right');
  }
 
 
  // === 写真トラックの初期化 ===
  const photoTrack = document.querySelector('.photo_track');
  if (photoTrack) {
-   // 右から左へ、速度2（px/秒）
-   initInfiniteSlider(photoTrack, 60, 'left');
+   // 右から左へ、速度30（px/秒）- ゆっくりめ
+   initInfiniteSlider(photoTrack, 30, 'left');
  }
 });

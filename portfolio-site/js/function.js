@@ -176,6 +176,27 @@ $(function () {
   });
 }); // $(function() の閉じタグ
 
+/************* スクロールアニメーション ***************/
+$(function () {
+  // Intersection Observerでスクロール時のアニメーションを制御
+  var animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right, .scale-in');
+  
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+  
+  animatedElements.forEach(function(el) {
+    observer.observe(el);
+  });
+});
+
 /************* 円形回転テキスト（スクロールボタン） ***************/
 document.addEventListener('DOMContentLoaded', () => {
   const circleText = document.querySelector('.circle-text_02');
