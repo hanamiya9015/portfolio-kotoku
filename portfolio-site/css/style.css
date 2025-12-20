@@ -914,8 +914,21 @@ body.loaded .scroll-down_02 {
   line-height: 1.5;
 }
 
+#aboutMe .aboutMe_contents .text_inner .text p:nth-child(2) {
+  display: inline;
+  padding-bottom: 0;
+}
+
 #aboutMe .aboutMe_contents .text_inner .text p:last-child {
   padding-bottom: 0;
+}
+
+.more-text p {
+  display: block;
+}
+
+.more-text p:nth-child(2) {
+  margin-top: 1em;
 }
 
 #aboutMe .aboutMe_contents .text_inner .btn {
@@ -2201,6 +2214,7 @@ button.view_btn.on-click::after {
 
   #aboutMe .aboutMe_contents .text_inner .text p:nth-child(2) {
     padding-bottom: 0;
+    display: block;
   }
 
   #aboutMe .aboutMe_contents .text_inner .btn {
@@ -2248,6 +2262,14 @@ button.view_btn.on-click::after {
     display: block;
     opacity: 1;
     max-height: 1000px; /* 内容に応じて十分な高さを設定 */
+  }
+
+  .more-text p {
+    display: block;
+  }
+
+  .more-text p:nth-child(2) {
+    margin-top: 1em;
   }
 
   /* ボタンの矢印（スパン）の回転 */
